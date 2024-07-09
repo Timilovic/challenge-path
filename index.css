@@ -9,6 +9,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
 
 }
 
