@@ -4,7 +4,7 @@
 
 .whole{
     width: 50%;
-    height:610px;
+    max-height:610px;
     border:1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
