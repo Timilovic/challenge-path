@@ -2,49 +2,32 @@
     box-sizing: border-box;
 }
 
-.whole{
-    width: 50%;
-    max-height:610px;
-    border:1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    border-radius: 5px;
-    overflow: hidden;
-
+body{
+    background-color:hsl(30, 38%, 92%);
 }
 
-h2{
-    font-family: Montserrat;
-    font-weight: 700;
+article{
+    /* max-height: 400px; */
 }
 
-p{
-    font-family:Fraunces ;
-    font-weight: 500;
-}
-
-.whole .right{
-    padding: 15px;
-}
-
-img{
-    width:100%;
-    height: auto;
+article,
+section{
+    min-width: 200px;
+    min-height: 392px;
 }
 
 p, h2, del{
     color:rgb(165, 160, 160) ;
-    margin: 36px 0;
 }
 
-.d-flex{
+.money{
     max-width:178px;
     align-items: center;
 }
 
 button{
     width: 100%;
+    background-color: hsl(158, 36%, 37%) !important;
 }
 
 button img{
@@ -52,38 +35,40 @@ button img{
 }
 
 
-@media screen  and (max-width:1067px) {
-.whole{
-    margin-top:30px;
-    width:58%;
-}
+@media screen  and (max-width:885px) {
 
-    p, h2, del{
-        margin:10px 0;
-    } 
-}
-
-.attribution{
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-@media screen and (max-width:855px) {
     .whole{
-        grid-template-columns: 1fr;
-        height: auto;
-        border-style: none;
-        overflow: hidden;
-        border-radius: 6px !important;
-        box-shadow: 2px 4px 7px rgb(172, 170, 170);
+        flex-direction: column !important;
+        width: 70% !important;
     }
 
-    .left, 
-    .left img{
-        height:400px
+    .left{
+        max-height: 370px !important;
+        min-height: 40px !important;
+        border-radius: 0 !important;
     }
 
-    p, h2, del{
-        margin: 29px 0;
+    .left img,
+   .right{
+        height: 420px!important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    object-fit: cover;
+    object-position: center;
+    }
+
+    .rounded-end-3{
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+}
+
+@media screen and (max-width:427px) {
+    .whole{
+        width: 80%;
     }
 }
